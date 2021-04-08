@@ -14,8 +14,8 @@
         <header id="menu" class="section">
             <nav id="nav_menu">
                 <ul id="ul_menu">
-                    <li>Hébergements</li>
-                    <li>Activités</li>
+                    <li><a href="#hebergement">Hébergement</a></li>
+                    <li><a href="#activités">Activités</a></li>
                     <li>S'inscrire</li>
                 </ul>
             </nav>
@@ -29,32 +29,85 @@
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
 <!--Div avec séléction paramètres/filtres-->
-            <div id="ville" class= "class_h1"> <!--CHOIX VILLES--> </div>
-            <div id="filtres" class= "class_h1"> <!--CHOIX FILTRES--> </div>
+            <div id="ville" class= "class_h1"> 
+                <!--CHOIX VILLES--> 
+                <fieldset>
+                    <form method="post" action="/selection_ville_action.php"> <!--PHP inactif-->
+                        <label for="selection_ville"></label>
+                        <select name="Ville" name="selection_ville" id="selection_ville">
+                            <option value="marseille"> Marseille </option>
+                            <option value="paris"> Paris </option>
+                            <option value="bordeaux"> Bordeaux</option>
+                            <option value="nantes"> Nantes</option>
+                            <option value="maubeuge"> Maubeuge</option>
+                        </select>
+                    </form>
+                    <form method="post" action="/recherche_ville_action.php"> <!--PHP inactif-->
+                        <label for="recherche_ville"></label>
+                        <input type="submit" name="recherche_ville" id="recherche_ville" value="Rechercher"/>
+                    </form>
+                </fieldset>
+            </div>
+            <div id="filtres" class= "class_h1"> 
+            <!--CHOIX FILTRES-->
+                <fieldset>
+                    <!--form à mettre ici-->
+                </fieldset>
+            </div>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </section>
 
 <!-- Section Hébergement-->
         <section id="section_hebergement" class="section">
 <!-- Div hebergement à Marseille-->
-            <div id="hebergement_marseille" class="class_hebergement" div> <!--CHOIX HEBERGEMENTS MARSEILLE--> </div>
+            <div id="hebergement" class="class_hebergement" div> <!--CHOIX HEBERGEMENTS MARSEILLE--> </div>
 <!-- Div les plus populaires-->
             <div id="populaires" class="class_hebergement"> <!--CHOIX POPULAIRES--> </div>
         </section>
 
-<!--Section h2-->
-        <section id="section_h2" class="section">
+<!--Section Activités-->
+        <section id="section_activités" class="section">
             <h2>Activités à Marseille</h2><br />
-<!--Div Activités à Marseille-->
-            <div id="act_marseille" class="class_act"> <!--CHOIX ACTIVITES MARSEILLE--> </div>
+<!--Div Activités-->
+            <div id="activités" class="class_act"> <!--CHOIX ACTIVITES MARSEILLE--> 
+                    <ul id="ul_activités">
+                        <li id="vieux_port">Vieux Port</li>
+                        <li id="fort_pomègues">Fort de Pomègues</li>
+                        <li id="frioul">Îles du Frioul</li>
+                        <li id="calanques">Parc National des Calanques</li>
+                        <li id="nddlg">Notre-Dame-De-La-Garde</li>
+                        <li id="longchamp">Parc Longchamp</li>
+                    </ul>
+                </nav>
+            </div>
         </section>
 
 <!--FOOTER-->
         <footer id="footer" class="section">
 <!--Div Tableau -->
-        <div id="tableau_footer"> <!--TABLEAU "A propos", "Nos hébergements", "Assistance"--> </div>
+        <div id="tableau_footer"> <!--TABLEAU "A propos", "Nos hébergements", "Assistance"--> 
+            <table>
+                <tr>
+                    <th>A Propos</th>
+                    <th>Nos hébergements</th>
+                    <th>Assistance</th>
+                </tr>
+                <tr>
+                    <td>Fonctionnement du Site</td>
+                    <td>Charte qualité</td>
+                    <td>Centre d'aide</td>
+                </tr>
+                <tr>
+                    <td>Conditions générales de vente</td>
+                    <td>Soumettre votre hôtel</td>
+                    <td>Nous contacter</td>
+                </tr>
+                <tr>
+                    <td>Données et confidentialité</td>
+                </tr>
+            </table>
+        </div>
         </footer>
-
         </div>
     </body>
 </html>
