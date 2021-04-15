@@ -19,13 +19,37 @@
     height: 1em;
     fill: currentColor;
 }
+#star-solid{
+    width: 1em;
+    height: 1em; 
+    fill: currentColor;
+}
 
+/*Margin Body*/
+
+#body_page{
+    margin-left: 3.75%;
+    margin-right: 3.75%;
+    margin-top: 2.65%;
+    margin-bottom: 2.65%;
+}
+
+/*HEADER*/
+
+#menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+#icone_reservia{
+    display: flex-start;
+}
 
 /*NAV*/
 
-#ul_menu{
+#nav_menu{
     display: flex;
-    justify-content: flex-end;
+    align-self: flex-end;
     list-style-type: none;
 }
 
@@ -37,8 +61,17 @@
     text-decoration:none;
 }
 
+#li_hebergement{
+    display: inline-block;
+}
+
+#li_activites{
+    display: inline-block;
+}
+
 #inscription{
     align-self: flex-end;
+    display: inline-block;
 }
 
 
@@ -47,6 +80,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+h1{
+    font-weight: bold;
 }
 
 /*Choix ville*/
@@ -58,9 +94,13 @@
 
 /*Filtres*/
 #filtres{
-    display: flex;
-    justify-content: flex-start;
-    align-items: start;
+    display: flex; 
+    vertical-align: top;
+    align-items: center;
+}
+#filtres_h4, #eco, #famille, #coeur, #chien{
+    display: inline-block;
+    vertical-align: top;
 }
 
 #economique, #familial, #romantique, #animaux{
@@ -72,22 +112,57 @@
 #info{
     display: flex; 
     justify-content: flex-start;
+    align-items: center;
 }
 
-/*Aside*/
+
+/*ASIDE*/
 #pop{
     display: flex;
     flex-direction: column;
     float: right;
-    justify-content: flex-end;
-    align-items: flex-end;
+    width: 31%;
 }
+
+#pop_h2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#aside_figures{
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+}
+
+.class_figure_aside{
+    display: flex;
+    align-items: left;
+}
+
 .img_aside{
     width: 127px;
     height: 134px;
+    display: flex;
+    justify-content: flex-start;
 }
 
+.aside_figcaption{
+    display: flex;
+    flex-direction: column;
+}
+
+
 /*Article*/
+#hebergement{
+    width: 66%;
+}
+#article_figures{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .img_article{
     width: 236px;
     height: 114px;
@@ -96,15 +171,34 @@
 /*Activités*/
 #section_activités{
     display: flex;
-}
-#act1_2_img{
-    display: flex;
     flex-direction: column;
 }
-#act2_2_img{
+
+#div_activites{
+    display: flex;
+    justify-content: left;
+}
+
+#act_1{
+    display: flex;
+}
+
+#act_2{
+    display: flex;
+}
+
+#act_1_2_img{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
+
+#act_2_2_img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 #section_activités img{
     width: 302px;
 }
@@ -117,25 +211,25 @@
 .img_activites_small{
     height: 110px;
 }
-#activités_1{
-    display: flex;
-}
-#activités_2{
-    display: flex;
-}
-
 
 /*Footer*/
 #footer{
-    display: flex
+    display: flex;
+    margin-top: 3.3%;
 }
 
 .ul_footer{
     display: flex;
     flex-direction: column;
+    align-content: space-between;
     list-style-type: none;
     text-decoration:none;
 }
+
+#a_propos, #nos_hebergements, #assistance{
+    margin-right: 20%;
+}
+
 .ul_footer a{
     text-decoration:none;
 }
