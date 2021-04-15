@@ -8,6 +8,7 @@
     font-weight: 400;
     font-style: normal;
 }
+
 *
 {
     font-family: 'Raleway Regular';
@@ -15,14 +16,37 @@
 
 /*Icones*/
 #map-marker, #money-bill, #child-solid, #heart-solid, #dog-solid, #info-circle, #chart-line{
-    width: 1em;
-    height: 1em;
+    width: 1.3em;
+    height: 1.3em;
     fill: currentColor;
 }
+
+#map-marker{
+    background-color: #f2f2f2;
+}
+
+#money-bill, #child-solid, #heart-solid, #dog-solid{
+    color: #0065fc;
+    background-color: #deebff;
+}
+
 #star-solid{
-    width: 1em;
-    height: 1em; 
-    fill: currentColor;
+    width: 1.1em;
+    height: 1.1em; 
+    fill: #0065fc;
+    color: #0065fc;
+}
+
+#star-solid-gris{
+    width: 1.1em;
+    height: 1.1em;
+    fill: #d9d9d9;
+    color: #d9d9d9;
+}
+
+#info-circle{
+    background-color: #0065fc;
+    color: #ffffff;
 }
 
 /*Margin Body*/
@@ -59,19 +83,28 @@
 
 #ul_menu a{
     text-decoration:none;
+    color:black;
 }
 
 #li_hebergement{
     display: inline-block;
+    color: black;
 }
 
 #li_activites{
     display: inline-block;
+    color: black
 }
 
 #inscription{
     align-self: flex-end;
     display: inline-block;
+    color: #0065fc;
+}
+
+#inscription a{
+    color: #0065fc; 
+
 }
 
 
@@ -85,11 +118,24 @@ h1{
     font-weight: bold;
 }
 
+
 /*Choix ville*/
+
+#recherche_ville{
+    color: #ffffff;
+    background-color:#0065fc;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 1em
+}
+#selection_ville{
+    border-top: solid #f2f2f2 1px;
+    border-bottom: solid #f2f2f2 1px;
+}
+
 #ville{
     display: flex; 
     margin-bottom: 2em;
-    
 }
 
 /*Filtres*/
@@ -98,15 +144,27 @@ h1{
     vertical-align: top;
     align-items: center;
 }
+
 #filtres_h4, #eco, #famille, #coeur, #chien{
     display: inline-block;
     vertical-align: top;
+    margin-right: 3%;
 }
 
 #economique, #familial, #romantique, #animaux{
     list-style-type: none;
     text-decoration:none;
+    color: black;
+    border-top: solid #d9d9d9 2px;
+    border-right: solid #d9d9d9 2px;
+    border-bottom: solid #d9d9d9 2px;
+    border-left: none;
+    border-radius: 50px;
+    padding: 1em;
+    padding-left: 0;
 }
+
+
 
 /*Info*/
 #info{
@@ -121,7 +179,11 @@ h1{
     display: flex;
     flex-direction: column;
     float: right;
-    width: 31%;
+    width: 31% ;
+    background-color: #f2f2f2 ;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-radius: 20px;
 }
 
 #pop_h2{
@@ -136,14 +198,18 @@ h1{
     align-self: start;
 }
 
-.class_figure_aside{
+.class_aside_figure{
     display: flex;
     align-items: left;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 0.5em
 }
 
 .img_aside{
     width: 127px;
     height: 134px;
+    border-radius: 10px;
     display: flex;
     justify-content: flex-start;
 }
@@ -157,16 +223,31 @@ h1{
 /*Article*/
 #hebergement{
     width: 66%;
+    background-color: #f2f2f2 ;
+    padding: 1em;
+    border-radius: 20px;
 }
-#article_figures{
+#div_article_figures{
     display: flex;
     flex-wrap: wrap;
+}
+.class_article_figure{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 0.5em
 }
 
 .img_article{
     width: 236px;
     height: 114px;
+    border-radius: 10px;
 }
+
+#afficher_plus{
+    text-decoration:none;
+    color:black;
+}
+
 
 /*Activités*/
 #section_activités{
@@ -177,6 +258,7 @@ h1{
 #div_activites{
     display: flex;
     justify-content: left;
+    flex-wrap: wrap;
 }
 
 #act_1{
@@ -202,12 +284,19 @@ h1{
 #section_activités img{
     width: 302px;
 }
+
+.class_act_figure{
+    border-radius: 10px;
+}
+
 .img_activites_tall{
     height: 444px;
 }
+
 .img_activites_medium{
     height: 181px;
 }
+
 .img_activites_small{
     height: 110px;
 }
@@ -215,7 +304,10 @@ h1{
 /*Footer*/
 #footer{
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
     margin-top: 3.3%;
+    background-color: #f2f2f2 ;
 }
 
 .ul_footer{
@@ -232,4 +324,5 @@ h1{
 
 .ul_footer a{
     text-decoration:none;
+    color: black;
 }
