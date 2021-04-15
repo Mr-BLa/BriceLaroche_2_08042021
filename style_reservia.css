@@ -16,18 +16,22 @@
 
 /*Icones*/
 #map-marker, #money-bill, #child-solid, #heart-solid, #dog-solid, #info-circle, #chart-line{
-    width: 1.3em;
-    height: 1.3em;
-    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;   
 }
 
 #map-marker{
     background-color: #f2f2f2;
+    width: 1.5em;
+    height: 1.5em;
 }
 
 #money-bill, #child-solid, #heart-solid, #dog-solid{
     color: #0065fc;
     background-color: #deebff;
+    padding: 1em;
+    border-radius: 50%;
 }
 
 #star-solid{
@@ -47,6 +51,7 @@
 #info-circle{
     background-color: #0065fc;
     color: #ffffff;
+    border-radius: 50%;
 }
 
 /*Margin Body*/
@@ -63,6 +68,7 @@
 #menu{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2%;
 }
 
 #icone_reservia{
@@ -203,7 +209,7 @@ h1{
     align-items: left;
     background-color: #ffffff;
     border-radius: 10px;
-    padding: 0.5em
+    padding: 0.3em
 }
 
 .img_aside{
@@ -234,7 +240,7 @@ h1{
 .class_article_figure{
     background-color: #ffffff;
     border-radius: 10px;
-    padding: 0.5em
+    padding: 0.3em
 }
 
 .img_article{
@@ -286,19 +292,25 @@ h1{
 }
 
 .class_act_figure{
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .img_activites_tall{
     height: 444px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .img_activites_medium{
     height: 181px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .img_activites_small{
     height: 110px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 /*Footer*/
@@ -320,6 +332,7 @@ h1{
 
 #a_propos, #nos_hebergements, #assistance{
     margin-right: 20%;
+    padding-bottom: 1.5em;
 }
 
 .ul_footer a{
