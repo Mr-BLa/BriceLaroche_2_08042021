@@ -11,30 +11,24 @@
 
 *
 {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
 
 /*Icones*/
-.icon{
-    width: 1em;
-    height: 1em;
-    fill: currentColor;   
-}
 
 .fa-map-marker-alt{
     background-color: #f2f2f2;
     display: flex;
-    font-size: 1.3em;
+    font-size: 1.2em;
     justify-content: center;
     align-items: center;
-
 }
 
 .iconbleu{
+    font-size: 1.2em;
     color: #0065fc;
     background-color: #deebff;
-    padding: 1em;
-    border-radius: 50%;
 }
 
 .etoile{
@@ -106,7 +100,7 @@
 }
 
 .ul_li{
-    margin-right: 5em;
+    margin-right: 4em;
     display: inline-block;
 }
 
@@ -133,10 +127,18 @@ border-top: solid 2px transparent;
     flex-direction: column;
     justify-content: center;
 }
-h1{
+.h1_titre{
     font-weight: bold;
+    padding-bottom: 0.5em;
 }
 
+.h1_sous-titre{
+    font-size: 0.9em;
+}
+
+#bloc_h1{
+    margin-bottom: 1em;
+}
 
 
 /*Choix ville*/
@@ -150,10 +152,7 @@ h1{
 
 .span_icon_map-marker{
     background-color: #f2f2f2;
-    padding-right: 1.4em;
-    padding-left: 1.4em;
-    padding-top: 0.7em;
-    padding-bottom: 0.7em;
+    padding: 12px 16px 12px 16px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -180,46 +179,92 @@ h1{
 
 
 /*Filtres*/
+
+
 #filtres{
     display: flex; 
     vertical-align: top;
     align-items: center;
+    margin-bottom: 2em;
+}
+
+.h4_filtres{
+    margin-right: 2em;
 }
 
 .div_filtres{
-    display: inline-block;
-    vertical-align: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.liens_filtres{
+    display: inline-flex;
+    flex-direction: row-reverse;
+    list-style-type: none;
+    text-decoration:none;
+    color: black;
+    max-height: 1em;
     border-top: solid #d9d9d9 2px;
     border-right: solid #d9d9d9 2px;
     border-bottom: solid #d9d9d9 2px;
     border-left: none;
-    border-radius: 0 60px 60px 0;
-    padding: 0 0.9em 0 0.9em;
-    margin: 0 2em 0 0
+    border-radius: 60px;
+    margin-right: 2em;
+    padding: 1em 1.5em 1em 0;
 }
 
 .span_icon_filtres{
-    display: inline-block;
-    padding: 0 0.9em 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: none;
+    margin-right: 1em;
+    background-color: #deebff;
+    border-radius: 50%;
 }
 
-.liens_filtres{
-    list-style-type: none;
-    text-decoration:none;
-    color: black;
+.fa-money-bill-wave{
+    padding: 0.855em 0.75em 0.86em 0.75em;
+    border-radius: 50%;
 }
+
+.fa-child{
+    padding: 0.855em 1em 0.86em 1em;
+    border-radius: 50%;
+}
+
+.fa-heart{
+    padding: 0.86em 0.86em 0.86em 0.86em;
+    border-radius: 50%;
+}
+
+.fa-dog{
+    padding: 0.865em 0.86em 0.86em 0.86em;
+    border-radius: 50%;
+}
+
+
+
+
 
 /*Info*/
-#info{
+
+
+.information{
     display: flex; 
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 2em;
 }
+
 
 
 
 
 /*ASIDE*/
+
+
 #pop{
     display: flex;
     flex-direction: column;
