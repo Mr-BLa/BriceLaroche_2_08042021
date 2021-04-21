@@ -67,10 +67,7 @@
 /*Margin Body*/
 
 #body_page{
-    margin-left: 3.75%;
-    margin-right: 3.75%;
-    margin-top: 2.65%;
-    margin-bottom: 2.65%;
+    margin: 2.65% 3.75% 2.65% 3.75%;
 }
 
 
@@ -262,14 +259,32 @@ border-top: solid 2px transparent;
 
 
 
+
+
+
+
+
+
+
+
+/*SECTION 2 - HEBERGEMENT */
+
+#section_hebergement{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    min-width: 92.5vw;
+}
+
+
+
 /*ASIDE*/
 
 
 #pop{
     display: flex;
     flex-direction: column;
-    float: right;
-    width: 31% ;
+    min-width: 29vw;
     background-color: #f2f2f2 ;
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -314,25 +329,44 @@ border-top: solid 2px transparent;
 
 /*Article*/
 #hebergement{
-    width: 66%;
+    min-width: 60.5vw;
     background-color: #f2f2f2 ;
-    padding: 1em;
+    margin-right: 3vw;
+    margin-left: 3vw;
     border-radius: 20px;
 }
-#div_article_figures{
+
+.titre_article{
+    padding: 3vw 0 0 3vw;
+}
+
+#div_article{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 1.5em 0 1.5em;
 }
-.class_article_figure{
+.article_cards{
     background-color: #ffffff;
-    border-radius: 10px;
-    padding: 0.3em
+    background-size: cover;
+    padding: 0.4em;
+    margin: 0 1vw 2.6vw 1vw;
+    border-radius: 25px;
+    width: 16vw;
+    height: 25vh;
+}
+
+.article_a{
+    list-style-type: none;
+    text-decoration:none;
+    color: black;
 }
 
 .img_article{
-    width: 236px;
-    height: 114px;
-    border-radius: 10px;
+    border-radius: 20px 20px 0 0;
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
 }
 
 #afficher_plus{
