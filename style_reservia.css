@@ -69,10 +69,12 @@
 
 
 
-/*Margin Body*/
+/*BODY*/
 
 #body_page{
-    margin: 2.65% 3.75% 2.65% 3.75%;
+    width: auto;
+    max-width: 1440px;
+    justify-content: center;
 }
 
 
@@ -84,6 +86,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 2%;
+    padding: 3.5vw 3.5vw 0 3.5vw;
 }
 
 #icone_reservia{
@@ -95,13 +98,13 @@
 
 /*NAV*/
 
-#nav_header{
+#header_nav{
     display: flex;
     align-self: flex-end;
     list-style-type: none;
 }
 
-.ul_li{
+.header_ul_li{
     margin-right: 4em;
     display: inline-block;
 }
@@ -128,10 +131,12 @@ border-top: solid 2px transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 3.5vw 0 3.5vw;
 }
 .h1_titre{
     font-weight: bold;
     padding-bottom: 0.5em;
+    font-size: 1.5em;
 }
 
 .h1_sous-titre{
@@ -259,7 +264,7 @@ border-top: solid 2px transparent;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    min-width: 92.5vw;
+    width: 100%;
 }
 
 
@@ -272,9 +277,9 @@ border-top: solid 2px transparent;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 45vw;
     background-color: #f2f2f2 ;
     border-radius: 25px;
+    width: 32%;
 }
 
 
@@ -282,7 +287,7 @@ border-top: solid 2px transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 22vw;
+    width: 17vw;
     margin: 2vw 0 2vw 0;
 }
 
@@ -297,9 +302,9 @@ border-top: solid 2px transparent;
     display: flex;
     background-color: #ffffff;
     border-radius: 25px;
-    width: 22vw;
-    height: 180px;
-    padding: 0.4em 0 0.4em 0.4em;
+    width: 17vw;
+    height: 7vw;
+    padding: 0.4em 2em 0.4em 0.4em;
     margin-bottom: 2vw;
     box-shadow: 2px 2px 15px #d9d9d9;
 }
@@ -331,34 +336,33 @@ border-top: solid 2px transparent;
 
 /*Article*/
 #hebergement{
-    min-width: 60vw;
-    background-color: #f2f2f2 ;
-    margin: 0 3vw 0 2vw;
-    padding: 2.5vw 0 3vw 0;
+    background-color: #f2f2f2;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    width: 67%; 
+    padding: 1.5vw 0 1.5vw 0;
 }
 
 .titre_article{
-    margin: 0.5vw 0 1vw 2.5vw;
+    margin: 0 0 0 1.5vw;
 }
 
 #div_article{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 2.5vw 0 2.5vw;
+    justify-content: space-evenly;
+    align-content: space-between;
 }
 .article_cards{
     background-color: #ffffff;
     background-size: cover;
     padding: 0.5em 0.5em 0 0.5em;
-    margin: 10px 0 20px 0;
+    margin: 0 0 1.5vw 0;
     border-radius: 25px;
-    width: 16vw;
-    height: 280px;
+    width: 12.5vw;
+    height: 10.5vw;
     box-shadow: 2px 2px 15px #d9d9d9;
 }
 
@@ -385,8 +389,8 @@ border-top: solid 2px transparent;
 
 .afficher_plus{
     font-size: 1.3em;
-    padding: 0 0 3.5vw 0;
-    margin-left: 2.5vw;
+    padding: 0 0 1.5vw 0;
+    margin-left: 1.5vw;
 }
 
 
@@ -399,8 +403,9 @@ border-top: solid 2px transparent;
 #section_activités{
     display: flex;
     flex-direction: column;
-    min-width: 92.5vw;
-    margin: 3vh 0 3vh 0;
+    width: 100%;
+    margin: 3vw 0 3vw 0;
+    padding-bottom: 2vw;
 }
 
 .titre_activites{
@@ -409,61 +414,60 @@ border-top: solid 2px transparent;
 
 #div_activites{
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
-.groupe_3activites{
+
+.groupe_3act{
     display: flex;
-    width: 45vw;
+    justify-content: space-between;
 }
+
 
 .groupe_2activites{
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .activite_gd_format{
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    border-radius: 20px;
-    margin: 0;
-    padding-right: 3vw;
-    height: 25vh;
-    width: 302px;
+    margin-right: 1.25vw;
     box-shadow: 2px 2px 15px #f2f2f2;
+    border-radius: 20px;
 }
 
 .activites_petit_format{
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
-    width: 302px; 
-    margin: 0; 
-    padding-bottom: 3vw;
     box-shadow: 2px 2px 15px #f2f2f2;
+    border-radius: 20px;
+    padding-bottom: 2.7vw;
 }
 
-/*a href activités*/
-.activites_a{
+/*figure href activités*/
+.activites_figure{
     text-decoration:none;
     color: black;
+    width: 302px; 
+
 }
 
 .act_vieuxport_calanques{
-    height: 444px;
+    height: 480px;
 }
 .act_pomegues{
-    height: 238px;
+    height: 199px;
 }
 .act_frioul{
-    height: 165px;
+    height: 125px;
 }
 .act_nddlg{
-    height: 195px;
+    height: 155px;
 }
 .act_longchamp{
-    height: 209px;
+    height: 169px;
 }
 
 
@@ -471,51 +475,51 @@ border-top: solid 2px transparent;
 /*Images Activités*/
 
 .img_activites{
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    box-shadow: 2px 2px 12px #f2f2f2;
+    
 }
 
 
 
 /*Info activités*/
-.info_activites{
-    display: flex;
+.figcaption_activites{
+    height: 3vw;
 }
-
 
 
 
 /*Footer*/
 #footer{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 3.3%;
-    padding: 6vh 3vw 6vh 3vw;
-    background-color: #f2f2f2 ;
+    width: 100%;
+    max-width: 1440px;
+    background-color: #f2f2f2;
+    padding: 2vw 0 2vw 0;
 }
 
 .div_footer{
-    margin-right: 20%;
-    padding-bottom: 1.5em;
+    display: flex;
+    margin-left: 3.5vw;
 }
 
 .h4_footer{
-    padding-bottom: 2em;
+    padding: 0 0 2em 0;
 }
 
 .ul_footer{
     display: flex;
     flex-direction: column;
-    align-content: space-between;
+    width: 31vw;
+    margin: 0;
+    padding: 0;
     list-style-type: none;
     text-decoration:none;
 }
 
 .li_footer{
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
 }
 
 .ahref_footer{
