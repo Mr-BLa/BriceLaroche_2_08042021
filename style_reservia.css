@@ -15,6 +15,16 @@
     margin: 0;
 }
 
+
+
+/*Modif font - span*/
+
+.bold{
+    font-weight: bold;
+}
+
+
+
 /*Icones*/
 
 .fa-map-marker-alt{
@@ -86,11 +96,12 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 2%;
-    padding: 3.5vw 3.5vw 0 3.5vw;
+    padding: 0 3.5vw 0 3.5vw;
 }
 
 #icone_reservia{
     display: flex-start;
+    padding-top: 3.5vw;
 }
 
 
@@ -105,12 +116,18 @@
 }
 
 .header_ul_li{
-    margin-right: 4em;
+    margin-right: 2vw;
     display: inline-block;
 }
 
 .ul_li_ancre{
-border-top: solid 2px transparent;
+    border-top: solid 2px transparent;
+    padding: 3vw 1vw 2vw 1vw;
+}
+
+.nav_a_hover:hover{
+    border-top: solid 2px #0065fc;
+    padding: 3vw 1vw 2vw 1vw;
 }
 
 .ul_li_a{
@@ -120,6 +137,7 @@ border-top: solid 2px transparent;
 
 #inscription{
     color: #0065fc; 
+    padding-left: 1vw;
 }
 
 
@@ -140,7 +158,7 @@ border-top: solid 2px transparent;
 }
 
 .h1_sous-titre{
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 #bloc_h1{
@@ -173,6 +191,11 @@ border-top: solid 2px transparent;
     padding-left: 1.5em;
 }
 
+#selection_ville::placeholder{
+    font-weight: bold;
+    color: black;
+}
+
 #recherche_ville{
     color: #ffffff;
     background-color:#0065fc;
@@ -197,6 +220,7 @@ border-top: solid 2px transparent;
 
 .h4_filtres{
     margin-right: 2em;
+    font-weight: bold;
 }
 
 .div_filtres{
@@ -212,6 +236,7 @@ border-top: solid 2px transparent;
     text-decoration:none;
     align-items: center;
     color: black;
+    font-weight: bold;
     max-height: 1em;
     border-top: solid #d9d9d9 2px;
     border-right: solid #d9d9d9 2px;
@@ -220,6 +245,11 @@ border-top: solid 2px transparent;
     border-radius: 60px;
     margin-right: 2em;
     padding: 1em 1.5em 1em 0;
+}
+
+.liens_filtres:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .span_icon_filtres{
@@ -268,6 +298,12 @@ border-top: solid 2px transparent;
 }
 
 
+/*Modifs fonts*/
+.tarifs{
+    font-size: 0.9em;
+}
+
+
 
 /*ASIDE*/
 
@@ -287,8 +323,12 @@ border-top: solid 2px transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 17vw;
+    width: 19vw;
     margin: 2vw 0 2vw 0;
+}
+
+.titre_pop{
+    font-weight: bold;
 }
 
 #div_aside{
@@ -309,6 +349,11 @@ border-top: solid 2px transparent;
     box-shadow: 2px 2px 15px #d9d9d9;
 }
 
+.aside_cards:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 .aside_a{
     display: flex;
     text-decoration:none;
@@ -326,6 +371,7 @@ border-top: solid 2px transparent;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-right: 1.5vw;
 }
 
 .info_cards_aside{
@@ -347,6 +393,8 @@ border-top: solid 2px transparent;
 
 .titre_article{
     margin: 0 0 0 1.5vw;
+    padding-bottom: 1vw;;
+    font-weight: bold;
 }
 
 #div_article{
@@ -358,12 +406,17 @@ border-top: solid 2px transparent;
 .article_cards{
     background-color: #ffffff;
     background-size: cover;
-    padding: 0.5em 0.5em 0 0.5em;
+    padding: 0.4em 0.4em 0 0.4em;
     margin: 0 0 1.5vw 0;
     border-radius: 25px;
     width: 12.5vw;
     height: 10.5vw;
     box-shadow: 2px 2px 15px #d9d9d9;
+}
+
+.article_cards:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .article_a{
@@ -389,7 +442,8 @@ border-top: solid 2px transparent;
 
 .afficher_plus{
     font-size: 1.3em;
-    padding: 0 0 1.5vw 0;
+    font-weight: bold;
+    padding: 0 0 2vw 0;
     margin-left: 1.5vw;
 }
 
@@ -409,7 +463,8 @@ border-top: solid 2px transparent;
 }
 
 .titre_activites{
-    padding: 0 0 2vw 0;
+    padding: 1vw 0 2vw 0;
+    font-weight: bold;
 }
 
 #div_activites{
@@ -433,9 +488,14 @@ border-top: solid 2px transparent;
 .activite_gd_format{
     display: flex;
     flex-direction: column;
-    margin-right: 1.25vw;
+    margin-right: 1.7vw;
     box-shadow: 2px 2px 15px #f2f2f2;
     border-radius: 20px;
+}
+
+.activite_gd_format:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .activites_petit_format{
@@ -446,8 +506,13 @@ border-top: solid 2px transparent;
     padding-bottom: 2.7vw;
 }
 
+.activites_petit_format:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 /*figure href activités*/
-.activites_figure{
+.activites_a{
     text-decoration:none;
     color: black;
     width: 302px; 
@@ -456,6 +521,9 @@ border-top: solid 2px transparent;
 
 .act_vieuxport_calanques{
     height: 480px;
+}
+.img_vieuxport_calanques{
+    height: 428px;
 }
 .act_pomegues{
     height: 199px;
@@ -487,6 +555,7 @@ border-top: solid 2px transparent;
 /*Info activités*/
 .figcaption_activites{
     height: 3vw;
+    padding: 0.75em 0 0.5em 1em;
 }
 
 
@@ -506,6 +575,7 @@ border-top: solid 2px transparent;
 
 .h4_footer{
     padding: 0 0 2em 0;
+    font-weight: bold;
 }
 
 .ul_footer{
