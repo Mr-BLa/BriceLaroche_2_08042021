@@ -17,7 +17,7 @@
 
 
 
-/*Modif font - span*/
+/*Modif ponctuelles font - span*/
 
 .bold{
     font-weight: bold;
@@ -82,12 +82,16 @@
 /*BODY*/
 
 #body_page{
-    width: auto;
-    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-
+.wrapper_body{
+    margin: auto;
+    max-width: 1440px;
+    padding: 0 3.5vw 0 3.5vw;
+}
 
 
 /*HEADER*/
@@ -96,7 +100,6 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 2%;
-    padding: 0 3.5vw 0 3.5vw;
 }
 
 #icone_reservia{
@@ -149,7 +152,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 3.5vw 0 3.5vw;
 }
 .h1_titre{
     font-weight: bold;
@@ -245,11 +247,12 @@
     border-radius: 60px;
     margin-right: 2em;
     padding: 1em 1.5em 1em 0;
+    transition: 0.5s;
 }
 
 .liens_filtres:hover{
     transform: scale(1.1);
-    transition: 0.5s;
+
 }
 
 .span_icon_filtres{
@@ -347,11 +350,11 @@
     padding: 0.4em 2em 0.4em 0.4em;
     margin-bottom: 2vw;
     box-shadow: 2px 2px 15px #d9d9d9;
+    transition: 0.5s;
 }
 
 .aside_cards:hover{
     transform: scale(1.1);
-    transition: 0.5s;
 }
 
 .aside_a{
@@ -412,11 +415,11 @@
     width: 12.5vw;
     height: 10.5vw;
     box-shadow: 2px 2px 15px #d9d9d9;
+    transition: 0.5s;
 }
 
 .article_cards:hover{
     transform: scale(1.1);
-    transition: 0.5s;
 }
 
 .article_a{
@@ -491,11 +494,11 @@
     margin-right: 1.7vw;
     box-shadow: 2px 2px 15px #f2f2f2;
     border-radius: 20px;
+    transition: 0.5s;
 }
 
 .activite_gd_format:hover{
     transform: scale(1.1);
-    transition: 0.5s;
 }
 
 .activites_petit_format{
@@ -504,11 +507,11 @@
     box-shadow: 2px 2px 15px #f2f2f2;
     border-radius: 20px;
     padding-bottom: 2.7vw;
+    transition: 0.5s;
 }
 
 .activites_petit_format:hover{
     transform: scale(1.1);
-    transition: 0.5s;
 }
 
 /*figure href activités*/
@@ -561,9 +564,14 @@
 
 
 /*Footer*/
-#footer{
-    width: 100%;
+
+.wrapper_footer{
+    margin: auto;
     max-width: 1440px;
+    width: 100%;
+}
+
+#footer{
     background-color: #f2f2f2;
     padding: 2vw 0 2vw 0;
 }
