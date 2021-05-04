@@ -304,6 +304,8 @@
 /*Modifs fonts*/
 .tarifs{
     font-size: 0.9em;
+    display: block;
+    padding-top: 0.5em;
 }
 
 
@@ -314,23 +316,23 @@
 #pop{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     background-color: #f2f2f2 ;
     border-radius: 25px;
-    width: 32%;
+    width: 31%;
 }
 
 
-.span_pop_h2{
+.div_pop_h2{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 19vw;
-    margin: 2vw 0 2vw 0;
+    width: 350px;
+    margin: 2vw 0 1.5vw 0;
 }
 
 .titre_pop{
+    display: block;
     font-weight: bold;
 }
 
@@ -345,9 +347,9 @@
     display: flex;
     background-color: #ffffff;
     border-radius: 25px;
-    width: 17vw;
-    height: 7vw;
-    padding: 0.4em 2em 0.4em 0.4em;
+    width: 325px;
+    height: 140px;
+    padding: 0.3em 2em 0.3em 0.3em;
     margin-bottom: 2vw;
     box-shadow: 2px 2px 15px #d9d9d9;
     transition: 0.5s;
@@ -364,8 +366,7 @@
 }
 
 .img_aside{
-    width: 40%;
-    height: 100%;
+    width: 41%;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
 }
@@ -374,11 +375,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-right: 1.5vw;
+    padding: 0 1.5vw 0.75em 0;
 }
 
 .info_cards_aside{
-    padding: 0 0 0 1em;
+    display: block;
+    padding: 0.75em 0 1em 1em;
 }
 
 
@@ -389,14 +391,12 @@
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 67%; 
-    padding: 1.5vw 0 1.5vw 0;
+    width: 65%;
+    padding: 0 0.3vw 0 0.3vw;
 }
 
 .titre_article{
-    margin: 0 0 0 1.5vw;
-    padding-bottom: 1vw;;
+    margin: 2vw 0 1.5vw 2vw;
     font-weight: bold;
 }
 
@@ -404,16 +404,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-content: space-between;
 }
 .article_cards{
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
     background-size: cover;
-    padding: 0.4em 0.4em 0 0.4em;
-    margin: 0 0 1.5vw 0;
+    padding: 0.3em 0.3em 1em 0.3em;
     border-radius: 25px;
-    width: 12.5vw;
-    height: 10.5vw;
+    width: 250px;
+    height: 180px;
+    margin: 0.25vw 0 1.25vw 0;
     box-shadow: 2px 2px 15px #d9d9d9;
     transition: 0.5s;
 }
@@ -429,28 +430,40 @@
 
 .img_article{
     border-radius: 20px 20px 0 0;
-    height: 60%;
     width: 100%;
+    height: 120px;
     object-fit: cover;
-    
+}
+
+.div_info_cards_article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .info_cards_article{
-    padding: 0 0 0.5em 1em;
+    display: block;
+    padding: 0.3em 0 0 1em;
+}
+
+.article_tarifs{
+    display: block;
+    padding: 0.3em 0 0 0;
+    font-size: 0.9em;
 }
 
 .etoiles_art{
-    padding: 0 0 0 1em;
+    padding: 0.3em 0 0 1em;
 }
 
 .afficher_plus{
     font-size: 1.3em;
     font-weight: bold;
-    padding: 0 0 2vw 0;
-    margin-left: 1.5vw;
 }
 
-
+.div_afficher_plus{
+    margin: 1vw 0 0 2vw;
+}
 
 
 
@@ -461,8 +474,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 3vw 0 3vw 0;
-    padding-bottom: 2vw;
+    margin: 2vw 0 2.5vw 0;
 }
 
 .titre_activites{
@@ -472,27 +484,23 @@
 
 #div_activites{
     display: flex;
-    justify-content: space-between;
 }
-
 
 .groupe_3act{
     display: flex;
-    justify-content: space-between;
 }
 
-
 .groupe_2activites{
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0 0 0 53px;
 }
 
 .activite_gd_format{
     display: flex;
     flex-direction: column;
-    margin-right: 1.7vw;
-    box-shadow: 2px 2px 15px #f2f2f2;
+    box-shadow: 2px 2px 10px #f2f2f2;
     border-radius: 20px;
     transition: 0.5s;
 }
@@ -501,12 +509,16 @@
     transform: scale(1.1);
 }
 
+.div_2e_gd_format{
+    margin: 0 0 0 53px;
+}
+
 .activites_petit_format{
     display: flex;
     flex-direction: column;
     box-shadow: 2px 2px 15px #f2f2f2;
     border-radius: 20px;
-    padding-bottom: 2.7vw;
+    padding-bottom: 53px;
     transition: 0.5s;
 }
 
@@ -514,11 +526,13 @@
     transform: scale(1.1);
 }
 
+
 /*figure href activités*/
+
 .activites_a{
     text-decoration:none;
     color: black;
-    width: 302px; 
+    width: 320px; 
 
 }
 
@@ -559,7 +573,9 @@
 .figcaption_activites{
     height: 3vw;
     padding: 0.75em 0 0.5em 1em;
+    font-weight: bold;
 }
+
 
 
 
@@ -567,29 +583,26 @@
 
 .wrapper_footer{
     margin: auto;
-    max-width: 1440px;
-    width: 100%;
-}
-
-#footer{
     background-color: #f2f2f2;
-    padding: 2vw 0 2vw 0;
+    padding: 2.5vw 3.5vw 2.5vw 3.5vw;
+    width: 1440px;
+    margin-bottom: 2vw;
 }
 
 .div_footer{
     display: flex;
-    margin-left: 3.5vw;
+    justify-content: space-between;
 }
 
-.h4_footer{
-    padding: 0 0 2em 0;
+.h3_footer{
+    padding: 0 0 1.5em 0;
     font-weight: bold;
 }
 
 .ul_footer{
     display: flex;
     flex-direction: column;
-    width: 31vw;
+    width: 31%;
     margin: 0;
     padding: 0;
     list-style-type: none;
