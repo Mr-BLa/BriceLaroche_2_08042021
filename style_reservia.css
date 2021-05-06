@@ -297,7 +297,6 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    width: 100%;
 }
 
 
@@ -320,7 +319,7 @@
     align-items: center;
     background-color: #f2f2f2 ;
     border-radius: 25px;
-    width: 31%;
+    min-width: 31%;
 }
 
 
@@ -349,7 +348,7 @@
     border-radius: 25px;
     width: 325px;
     height: 140px;
-    padding: 0.3em 2em 0.3em 0.3em;
+    padding: 5px 33px 5px 5px;
     margin-bottom: 2vw;
     box-shadow: 2px 2px 15px #d9d9d9;
     transition: 0.5s;
@@ -391,7 +390,7 @@
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    width: 65%;
+    max-width: 65%;
     padding: 0 0.3vw 0 0.3vw;
 }
 
@@ -410,7 +409,7 @@
     flex-direction: column;
     background-color: #ffffff;
     background-size: cover;
-    padding: 0.3em 0.3em 1em 0.3em;
+    padding: 5px 5px 15px 5px;
     border-radius: 25px;
     width: 250px;
     height: 180px;
@@ -443,17 +442,17 @@
 
 .info_cards_article{
     display: block;
-    padding: 0.3em 0 0 1em;
+    padding: 5px 0 0 15px;
 }
 
 .article_tarifs{
     display: block;
-    padding: 0.3em 0 0 0;
+    padding: 5px 0 0 0;
     font-size: 0.9em;
 }
 
 .etoiles_art{
-    padding: 0.3em 0 0 1em;
+    padding: 5px 0 0 15px;
 }
 
 .afficher_plus{
@@ -616,4 +615,68 @@
 .ahref_footer{
     text-decoration:none;
     color: black;
+}
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+
+/*1280*/
+@media screen and (max-width: 1280px){
+
+    .wrapper_body{
+        width: 1280px;
+    }
+
+    .wrapper_footer{
+        width: 1280px;
+    }
+
+    .groupe_2activites{
+        margin: 0 0 0 0;
+    }
+
+    .div_2e_gd_format{
+        margin: 0 0 0 0;
+    }
+
+}
+
+
+/*1080*/
+@media screen and (max-width: 1080px){
+
+    #hebergement{
+        max-width: none;
+        width: 630px;
+    }
+
+    #pop{
+        max-width: none;
+        width: 448px;
+    }
+
+    #section_hebergement{
+        justify-content: flex-end;
+    }
+
+    .wrapper_body{
+        width: 1080px;
+    }
+
+    .wrapper_footer{
+        width: 1080px;
+    }
+
+    #hebergement{
+        margin-right: 2px;
+    }
 }
