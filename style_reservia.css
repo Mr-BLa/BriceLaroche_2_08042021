@@ -82,15 +82,12 @@
 /*BODY*/
 
 #body_page{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .wrapper_body{
     margin: auto;
     max-width: 1440px;
-    padding: 0 3.5vw 0 3.5vw;
+    padding: 0 50px 0 50px;
 }
 
 
@@ -213,7 +210,7 @@
 /*Filtres*/
 
 
-#filtres{
+.filtres{
     display: flex; 
     vertical-align: top;
     align-items: center;
@@ -229,6 +226,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .liens_filtres{
@@ -246,6 +244,7 @@
     border-left: none;
     border-radius: 60px;
     margin-right: 2em;
+    margin-bottom: 15px;
     padding: 1em 1.5em 1em 0;
     transition: 0.5s;
 }
@@ -391,7 +390,7 @@
     display: flex;
     flex-direction: column;
     max-width: 65%;
-    padding: 0 0.3vw 0 0.3vw;
+    padding: 0 5px 0 5px;
 }
 
 .titre_article{
@@ -469,7 +468,7 @@
 
 
 /*Activités*/
-#section_activités{
+.section_activités{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -481,7 +480,7 @@
     font-weight: bold;
 }
 
-#div_activites{
+.div_activites{
     display: flex;
 }
 
@@ -581,16 +580,17 @@
 /*Footer*/
 
 .wrapper_footer{
+    width: 100%;
+    margin-bottom: 30px;
     margin: auto;
-    background-color: #f2f2f2;
-    padding: 2.5vw 3.5vw 2.5vw 3.5vw;
-    width: 1440px;
-    margin-bottom: 2vw;
 }
 
 .div_footer{
     display: flex;
     justify-content: space-between;
+    margin: auto;
+    background-color: #f2f2f2;
+    padding: 35px 50px 35px 50px;
 }
 
 .h3_footer{
@@ -632,51 +632,35 @@
 /*1280*/
 @media screen and (max-width: 1280px){
 
-    .wrapper_body{
-        width: 1280px;
+    .wrappers{
+        width: 100%;
     }
 
-    .wrapper_footer{
-        width: 1280px;
+
+            /*activités*/
+    
+    .section_activités{
+        margin: auto;
+        margin-top: 53px;
+    }
+    
+    .div_activites{
+        flex-direction: column;
+        margin: auto;
+        align-content: space-between;
     }
 
-    .groupe_2activites{
-        margin: 0 0 0 0;
+    .groupe_3act{
+        margin-bottom: 53px;
     }
 
     .div_2e_gd_format{
-        margin: 0 0 0 0;
+        margin: 0;
     }
 
-}
-
-
-/*1080*/
-@media screen and (max-width: 1080px){
-
-    #hebergement{
-        max-width: none;
-        width: 630px;
-    }
-
-    #pop{
-        max-width: none;
-        width: 448px;
-    }
-
-    #section_hebergement{
-        justify-content: flex-end;
-    }
-
-    .wrapper_body{
-        width: 1080px;
-    }
-
-    .wrapper_footer{
-        width: 1080px;
-    }
-
-    #hebergement{
-        margin-right: 2px;
+    .titre_activites{
+        display: block;
+        margin: auto;
+        margin-bottom: 15px;
     }
 }
