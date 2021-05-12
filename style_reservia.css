@@ -81,8 +81,6 @@
 
 /*BODY*/
 
-#body_page{
-}
 
 .wrapper_body{
     margin: auto;
@@ -101,7 +99,7 @@
 
 #icone_reservia{
     display: flex-start;
-    padding-top: 3.5vw;
+    padding-top: 50px;
 }
 
 
@@ -116,18 +114,18 @@
 }
 
 .header_ul_li{
-    margin-right: 2vw;
+    margin-right: 30px;
     display: inline-block;
 }
 
 .ul_li_ancre{
     border-top: solid 2px transparent;
-    padding: 3vw 1vw 2vw 1vw;
+    padding: 45px 15px 30px 15px;
 }
 
 .nav_a_hover:hover{
     border-top: solid 2px #0065fc;
-    padding: 3vw 1vw 2vw 1vw;
+    padding: 45px 15px 30px 15px;
 }
 
 .ul_li_a{
@@ -137,7 +135,7 @@
 
 #inscription{
     color: #0065fc; 
-    padding-left: 1vw;
+    padding-left: 15px;
 }
 
 
@@ -145,10 +143,7 @@
 
 
 /*BLOC PAGE*/
-#bloc_page{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.bloc_page{
 }
 .h1_titre{
     font-weight: bold;
@@ -296,6 +291,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    margin: 0 0 50px 0;
 }
 
 
@@ -472,7 +468,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 30px 0 35px 0;
+    margin: 30px 0 65px 0;
 }
 
 .titre_activites{
@@ -492,7 +488,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 0 0 53px;
+    margin: 0 0 0 46px;
 }
 
 .activite_gd_format{
@@ -508,7 +504,7 @@
 }
 
 .div_2e_gd_format{
-    margin: 0 0 0 53px;
+    margin: 0 0 0 47px;
 }
 
 .activites_petit_format{
@@ -516,7 +512,7 @@
     flex-direction: column;
     box-shadow: 2px 2px 15px #f2f2f2;
     border-radius: 20px;
-    padding-bottom: 53px;
+    padding-bottom: 50px;
     transition: 0.5s;
 }
 
@@ -530,7 +526,7 @@
 .activites_a{
     text-decoration:none;
     color: black;
-    width: 320px; 
+    width: 300px; 
 
 }
 
@@ -602,8 +598,6 @@
     display: flex;
     flex-direction: column;
     width: 31%;
-    margin: 0;
-    padding: 0;
     list-style-type: none;
     text-decoration:none;
 }
@@ -667,9 +661,6 @@
         padding: 15px 0 20px 0;
     }
 
-    .div_article{
-    }
-
     .article_cards{
         margin: 3.5px 0 50px 0;
     }
@@ -678,7 +669,8 @@
     
     .section_activités{
         margin: auto;
-        margin-top: 53px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
     
     .div_activites{
@@ -688,7 +680,7 @@
     }
 
     .groupe_3act{
-        margin-bottom: 53px;
+        margin-bottom: 50px;
     }
 
     .div_2e_gd_format{
@@ -699,5 +691,34 @@
         display: block;
         margin: auto;
         margin-bottom: 15px;
+    }
+}
+
+
+
+
+/*980*/
+@media screen and (max-width: 980px){
+
+            /*wrapper body*/
+    .wrapper_body{
+        padding: 0 3.5vw 0 3.5vw;
+    }
+
+
+
+            /*Footer*/
+
+    .div_footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ul_footer{
+        justify-content: center;
+        align-content: center;
+        width: none;
+        margin: auto;
+        margin-bottom: 3.5vw;
     }
 }
