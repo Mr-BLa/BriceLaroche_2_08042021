@@ -94,12 +94,11 @@
 #menu{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2%;
+    margin-bottom: 25px;
 }
 
 #icone_reservia{
-    display: flex-start;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 
@@ -107,25 +106,23 @@
 
 /*NAV*/
 
-#header_nav{
-    display: flex;
-    align-self: flex-end;
-    list-style-type: none;
-}
 
 .header_ul_li{
-    margin-right: 30px;
     display: inline-block;
 }
 
 .ul_li_ancre{
     border-top: solid 2px transparent;
-    padding: 45px 15px 30px 15px;
+    padding: 45px 25px 30px 25px;
 }
 
 .nav_a_hover:hover{
     border-top: solid 2px #0065fc;
-    padding: 45px 15px 30px 15px;
+    padding: 45px 25px 30px 25px;
+}
+
+.ul_li_sinscrire{
+    margin-left: 25px;
 }
 
 .ul_li_a{
@@ -134,8 +131,7 @@
 }
 
 #inscription{
-    color: #0065fc; 
-    padding-left: 15px;
+    color: #0065fc;
 }
 
 
@@ -207,9 +203,9 @@
 
 .filtres{
     display: flex; 
-    vertical-align: top;
-    align-items: center;
-    margin-bottom: 2em;
+    align-items: start;
+    margin-bottom: 10px;
+    line-height: 52px;
 }
 
 .h4_filtres{
@@ -217,12 +213,6 @@
     font-weight: bold;
 }
 
-.div_filtres{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
 .liens_filtres{
     display: inline-flex;
@@ -467,8 +457,8 @@
 .section_activités{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin: 30px 0 65px 0;
+    max-width: 100%;
+    margin: 30px auto 65px auto;
 }
 
 .titre_activites{
@@ -482,6 +472,14 @@
 
 .groupe_3act{
     display: flex;
+}
+
+.groupe_3act_gauche{
+    width: 48.4%;
+}
+
+.groupe_3act_droit{
+    width: 51.6%;
 }
 
 .groupe_2activites{
@@ -526,8 +524,6 @@
 .activites_a{
     text-decoration:none;
     color: black;
-    width: 300px; 
-
 }
 
 .act_vieuxport_calanques{
@@ -586,11 +582,11 @@
     justify-content: space-between;
     margin: auto;
     background-color: #f2f2f2;
-    padding: 35px 50px 35px 50px;
+    padding: 50px;
 }
 
 .h3_footer{
-    padding: 0 0 1.5em 0;
+    padding: 0 0 20px 0;
     font-weight: bold;
 }
 
@@ -603,7 +599,7 @@
 }
 
 .li_footer{
-    padding-bottom: 0.5em;
+    padding-bottom: 10px;
 }
 
 .ahref_footer{
@@ -626,11 +622,23 @@
 /*1280*/
 @media screen and (max-width: 1280px){
 
+    .wrapper_body{
+        padding: 0 3.5vw 0 3.5vw;
+    }
+
+    .filtres{
+        display: block;
+    }
+
 
             /*hébergement*/
     .section_hebergement{
         flex-direction: column;
         align-content: space-between;
+    }
+
+    .hebergement{
+        max-width: 88%;
     }
 
 
@@ -659,6 +667,7 @@
 
     .titre_article{
         padding: 15px 0 20px 0;
+        margin: 30px 0 0 30px;
     }
 
     .article_cards{
@@ -692,6 +701,10 @@
         margin: auto;
         margin-bottom: 15px;
     }
+
+    .activites_a{
+        width: 300px;
+    }
 }
 
 
@@ -706,18 +719,7 @@
     }
 
             /*Aside*/
-    .pop{
-        margin: 0 0 50px 0;
-        padding: 0 3.5vw 30px 3.5vw;
-    }
-    .div_pop_h2{
-        width: 42%;
-    }
-    .aside_cards{
-        width: 40%;
-    }
-
-
+    
 
             /*Article*/
     .hebergement{
@@ -725,10 +727,6 @@
         justify-content: center;
         padding: 0 2vw 50px 2vw;
         max-width: 100%;
-    }
-
-    .article_cards{
-        width: 28%;
     }
 
 
@@ -747,7 +745,7 @@
     .div_footer{
         flex-direction: column;
         justify-content: center;
-        padding: 35px 3.5vw 35px 3.5vw;
+        padding: 50px 3.5vw 50px 3.5vw;
     }
 
     .ul_footer{
