@@ -98,7 +98,7 @@
 }
 
 #icone_reservia{
-    padding-top: 40px;
+    margin: 43px 1.75vw 2vw 0;
 }
 
 
@@ -106,31 +106,49 @@
 
 /*NAV*/
 
-
-.header_ul_li{
-    display: inline-block;
+.header{
+    display: flex;
+    justify-content: space-between;
 }
+
+.header_div{
+    display: flex;
+}
+
+.header_ul{
+    display: flex;
+    list-style-type: none;
+}
+
 
 .ul_li_ancre{
     border-top: solid 2px transparent;
+    padding: 43px 25px 30px 25px;
+}
+
+.ul_li_ancre:hover{
+    border-top: solid 2px #0065fc;
+    padding: 43px 25px 30px 25px;
+}
+
+
+.ul_li_a{
+    text-decoration: none;
+    color:black;
     padding: 45px 25px 30px 25px;
 }
 
 .nav_a_hover:hover{
-    border-top: solid 2px #0065fc;
-    padding: 45px 25px 30px 25px;
+    color: #0065fc;
 }
 
-.ul_li_sinscrire{
+.sinscrire{
+    display: block;
     margin-left: 25px;
+    padding: 45px 0 0 0;
 }
 
-.ul_li_a{
-    text-decoration:none;
-    color:black;
-}
-
-#inscription{
+.inscription{
     color: #0065fc;
 }
 
@@ -139,8 +157,7 @@
 
 
 /*BLOC PAGE*/
-.bloc_page{
-}
+
 .h1_titre{
     font-weight: bold;
     padding-bottom: 0.5em;
@@ -749,10 +766,104 @@
     }
 
     .ul_footer{
-        justify-content: center;
-        align-content: center;
-        width: none;
-        margin: auto;
-        margin-bottom: 3.5vw;
+        
+        width: 75%;
+        margin-bottom: 35px;
+        padding-left: 0;
     }
+}
+
+
+
+
+/*680*/
+@media screen and (max-width: 680px){
+
+            /*Wrapper*/
+
+    .wrapper_body{
+        padding: 0;
+    }
+
+            /*Header*/
+
+    .header{
+        position: relative;
+        display: flex;
+    }
+
+    .header_div{
+        flex-direction: column-reverse;
+        width: 100vw;
+    }
+
+    .header_nav{
+        width: 100%;
+
+    }
+
+    .header_ul{
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .header_ul_li{
+        width: 50%;
+    }
+
+    .sinscrire{
+        
+    }
+
+    #icone_reservia{
+        position: absolute;
+    }
+
+
+
+            /*Section 1*/
+
+    .section_h1{
+        margin: 0 3.5vw 0 3.5vw;
+    }
+
+            /*Section 2*/
+
+        /*Aside*/
+
+        .pop{
+            margin: 0;
+            padding: 0 0 25px 0;
+            border-radius: 0;
+        }
+
+        .div_pop_h2{
+            margin: 30px 0 0 0;
+            width: 92%;
+        }
+
+        .aside_cards{
+            margin: 0 0 15px 0;
+            padding: 5px;
+        }
+
+        .aside_cards:hover{
+            transform: scale(1.06)
+        }
+
+        /*Article*/
+
+        .hebergement{
+            padding: 0 0 50px 0;
+            background-color: transparent;
+        }
+
+        .titre_article{
+            margin: 30px auto 0 auto; 
+        }
+
+        .article_cards{
+            width: 87.5%;
+            margin: 3.5px 0 10px 0;
+        }
 }
