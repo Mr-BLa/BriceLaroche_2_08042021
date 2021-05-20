@@ -150,6 +150,7 @@
 
 .inscription{
     color: #0065fc;
+    text-decoration: none;
 }
 
 
@@ -754,8 +755,6 @@
         margin: 50px auto 50px auto;
     }
 
-    .activites_a{
-    }
 
             /*Footer*/
 
@@ -811,12 +810,40 @@
         width: 50%;
     }
 
-    .sinscrire{
+    .ul_li_ancre{
+        border-top: none;
+        border-bottom: solid 2px #f2f2f2;
+        padding: 43px 0 30px 20px;
+    }
+
+    .ul_li_ancre:hover{
+        border-top: none;
+        border-bottom: solid 2px #0065fc;
+        padding: 43px 0 30px 20px;
+        font-weight: bold;
+    }
+
+    .ul_li_a{
+        padding: 43px 0 30px 20px;
+    }
+
+    .li_hebergements{
+
+    }
+
+    .li_activites{
         
+    }
+
+    .sinscrire{
+        margin-bottom: 10px;
+        padding: 58px 0 0 69%;
+        width: 70px;
     }
 
     #icone_reservia{
         position: absolute;
+        margin: 43px 1.75vw 2vw 5vw;
     }
 
 
@@ -826,6 +853,28 @@
     .section_h1{
         margin: 0 3.5vw 0 3.5vw;
     }
+
+    #bloc_h1{
+        margin: 30px 0 25px 0;
+    }
+
+        /*Choix Ville*/
+
+    #selection_ville{
+        width: 70%;
+    }
+
+    .submit_rechercher{
+        display: none;
+    }
+
+    #recherche_ville{
+        border-radius: 10px;
+        width: 45px;
+        position: absolute;
+        left: 75vw;
+    }
+
 
             /*Section 2*/
 
@@ -839,7 +888,7 @@
 
         .div_pop_h2{
             margin: 30px 0 0 0;
-            width: 92%;
+            width: 89%;
         }
 
         .aside_cards{
@@ -854,16 +903,117 @@
         /*Article*/
 
         .hebergement{
-            padding: 0 0 50px 0;
+            padding: 0;
             background-color: transparent;
         }
 
         .titre_article{
-            margin: 30px auto 0 auto; 
+            margin: 30px auto 0 5vw; 
         }
 
         .article_cards{
             width: 87.5%;
             margin: 3.5px 0 10px 0;
         }
+
+        .div_afficher_plus{
+            margin: 25px 0 0 5vw;
+        }
+
+        .afficher_plus{
+            font-size: 1.2em;
+        }
+
+
+            /*Activités*/
+
+        .section_activités{
+            margin: 0 auto 0 auto;
+        }
+
+        .titre_activites{
+            margin: 0 0 0 5vw;
+        }
+
+        .div_activites{
+            margin-left: 5vw;
+        }
+
+        .groupe_3act{
+            display: block;
+            margin-bottom: 0;
+        }
+
+        .groupe_3act_gauche{
+            width: 100%;
+        }
+
+        .groupe_3act_droit{
+            width: 100%;
+        }
+
+        .groupe_2activites{
+            margin: 0;
+            width: 95%;
+        }
+
+        .activites_a{
+            width: 100%;
+        }
+
+        .activite_gd_format{
+            width: 95%;
+            margin-bottom: 25px;
+        }
+
+        .activites_petit_format{
+            margin-bottom: 25px;
+        }
+
+        .act_vieuxport_calanques{
+            height: 200px;
+        }
+
+        .img_vieuxport_calanques{
+            height: 150px;
+        }
+
+        .act_longchamp{
+            height: 150px;
+        }
+        
+        .act_frioul{
+            height: 150px;
+        }
+
+        .act_nddlg{
+            height: 150px;
+        }
+
+        .act_pomegues{
+            height: 150px;
+        }
+
+
+
+            /*Footer*/
+
+        .div_footer{
+            margin-top: 25px;
+            padding: 50px 5vw 10px 5vw;
+        }
 }
+
+
+
+
+/*681 -> 6000 */
+@media screen and (min-width: 681px) and (max-width: 6000px){
+
+        .boutton_rechercher {
+            display: none;
+            color: transparent;
+            background-color: transparent;
+        }
+}
+
