@@ -405,7 +405,7 @@
 .div_article{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .article_cards{
     display: flex;
@@ -659,10 +659,17 @@
         max-width: 88%;
     }
 
+    .div_article{
+        justify-content: space-around;
+    }
+
+    .article_cards{
+        width: 30%;
+    }
 
             /*Aside*/
     .pop{
-        margin: auto;
+        margin: 0 3vw;
         margin-bottom: 50px;
         padding: 0 50px 30px 50px;
     }
@@ -673,6 +680,7 @@
 
     .aside_cards{
         margin-bottom: 50px;
+        width: 80%;
     }
 
 
@@ -685,11 +693,15 @@
 
     .titre_article{
         padding: 15px 0 20px 0;
-        margin: 30px 0 0 30px;
+        margin: 30px 0 0 0;
     }
 
     .article_cards{
         margin: 3.5px 0 50px 0;
+    }
+
+    .div_afficher_plus{
+        margin: 15px 0 0 0;
     }
 
             /*activités*/
@@ -737,7 +749,9 @@
     }
 
             /*Aside*/
-    
+    .pop{
+        margin: 0 0 50px 0;
+    }
 
             /*Article*/
     .hebergement{
@@ -788,12 +802,13 @@
 
     .header{
         position: relative;
-        display: flex;
+        display: block;
     }
 
     .header_div{
+        display: block;
         flex-direction: column-reverse;
-        width: 100vw;
+        width: 100%;
     }
 
     .header_nav{
@@ -802,47 +817,59 @@
     }
 
     .header_ul{
+        display: block;
         padding-left: 0;
         width: 100%;
     }
 
     .header_ul_li{
-        width: 50%;
+        width: 49%;
+        display: inline-block;
     }
 
     .ul_li_ancre{
         border-top: none;
         border-bottom: solid 2px #f2f2f2;
-        padding: 43px 0 30px 20px;
+        padding: 43px 0 30px 0;
+        box-sizing: border-box;
     }
 
     .ul_li_ancre:hover{
         border-top: none;
         border-bottom: solid 2px #0065fc;
-        padding: 43px 0 30px 20px;
+        padding: 43px 0 30px 0;
         font-weight: bold;
+        box-sizing: border-box;
     }
 
     .ul_li_a{
-        padding: 43px 0 30px 20px;
+        padding: 43px 0 30px 0;
     }
 
     .li_hebergements{
-
+        text-align: center;
     }
 
     .li_activites{
-        
+        text-align: center;
     }
 
     .sinscrire{
+        position: absolute;
+        top: 0;
+        right: 5vw;
         margin-bottom: 10px;
-        padding: 58px 0 0 69%;
+        padding: 58px 0 0 0;
         width: 70px;
+        border-bottom: none;
+    }
+
+    .sinscrire:hover{
+        padding: 58px 0 0 0;
+        border-bottom: none;
     }
 
     #icone_reservia{
-        position: absolute;
         margin: 43px 1.75vw 2vw 5vw;
     }
 
@@ -872,7 +899,20 @@
         border-radius: 10px;
         width: 45px;
         position: absolute;
-        left: 75vw;
+        left: 70vw;
+    }
+
+    .span_boutton{
+        position: absolute;
+        left: 70vw;
+    }
+
+    .boutton_rechercher{
+        color: #ffffff;
+        background-color: #0065fc;
+        border: solid #0065fc 1px;
+        border-radius: 10px;
+        padding: 1em;
     }
 
 
@@ -894,6 +934,7 @@
         .aside_cards{
             margin: 0 0 15px 0;
             padding: 5px;
+            width: 90%;
         }
 
         .aside_cards:hover{
@@ -909,6 +950,10 @@
 
         .titre_article{
             margin: 30px auto 0 5vw; 
+        }
+
+        .div_article{
+            justify-content: space-evenly;
         }
 
         .article_cards{
@@ -1010,10 +1055,8 @@
 /*681 -> 6000 */
 @media screen and (min-width: 681px) and (max-width: 6000px){
 
-        .boutton_rechercher {
+        .span_boutton {
             display: none;
-            color: transparent;
-            background-color: transparent;
         }
 }
 
