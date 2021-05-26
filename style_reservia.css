@@ -676,18 +676,40 @@
     .pop{
         margin: 0 3vw;
         margin-bottom: 50px;
-        padding: 0 50px 30px 50px;
+        padding: 0 50px 0 50px;
+    }
+
+    .div_aside{
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .div_pop_h2{
-        padding: 15px 0 30px 0;
+        padding: 0 0 30px 0;
+        margin: 30px 0 0 0;
+        width: 76vw;
     }
 
     .aside_cards{
         margin-bottom: 50px;
-        width: 80%;
+        width: 28%;
     }
 
+    .div_info_cards_aside{
+        padding: 0 0 10px 0;
+    }
+
+    .info_cards_aside{
+        padding: 0 0 0 1em;
+    }
+
+    .titre_cards_aside{
+        font-size: 0.9em;
+    }
+
+    .tarifs{
+        font-size: 0.8em;
+    }
 
             /*Article*/
     .hebergement{
@@ -758,6 +780,26 @@
         margin: 0 0 50px 0;
     }
 
+    .div_aside{
+        flex-direction: column;
+    }
+
+    .aside_cards{
+        width: 93%;
+    }
+
+    .div_info_cards_aside{
+        padding: 0 20px 10px 0;
+    }
+
+    .titre_cards_aside{
+        font-size: 1em;
+    }
+
+    .tarifs{
+        font-size: 0.9em;
+    }
+
             /*Article*/
     .hebergement{
         margin: 0;
@@ -766,6 +808,9 @@
         max-width: 100%;
     }
 
+    .article_cards{
+        width: 45%;
+    }
 
             /*activités*/
     
@@ -818,31 +863,30 @@
 
     .header_nav{
         width: 100%;
-
     }
 
     .header_ul{
-        display: block;
+        display: inline-flex;
         padding-left: 0;
         width: 100%;
     }
 
     .header_ul_li{
-        width: 49%;
+        width: 50%;
         display: inline-block;
     }
 
     .ul_li_ancre{
         border-top: none;
         border-bottom: solid 2px #f2f2f2;
-        padding: 43px 0 30px 0;
+        padding: 43px 0 15px 0;
         box-sizing: border-box;
     }
 
     .ul_li_ancre:hover{
         border-top: none;
         border-bottom: solid 2px #0065fc;
-        padding: 43px 0 30px 0;
+        padding: 43px 0 15px 0;
         font-weight: bold;
         box-sizing: border-box;
     }
@@ -862,7 +906,7 @@
     .sinscrire{
         position: absolute;
         top: 0;
-        right: 5vw;
+        right: 6vw;
         margin-bottom: 10px;
         padding: 58px 0 0 0;
         width: 70px;
@@ -917,7 +961,7 @@
         background-color: #0065fc;
         border: solid #0065fc 1px;
         border-radius: 10px;
-        padding: 1em;
+        padding: 1em 1.2em;
     }
 
 
@@ -944,6 +988,10 @@
 
         .aside_cards:hover{
             transform: scale(1.06)
+        }
+
+        .info_cards_aside{
+            padding: 0.75em 0 1em 1em;
         }
 
         /*Article*/
