@@ -637,7 +637,9 @@
     color: black;
 }
 
-
+.ahref_footer:hover{
+    font-weight: bold;
+}
 
 
 
