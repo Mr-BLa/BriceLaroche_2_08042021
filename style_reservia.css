@@ -146,11 +146,13 @@
     display: block;
     margin-left: 25px;
     padding: 45px 0 0 0;
+    transition: 0.5s;
 }
 
 .sinscrire:hover{
     border-top: none;
     padding: 47px 0 0 0;
+    transform: scale(1.1);
 }
 
 .inscription{
@@ -216,9 +218,12 @@
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     padding: 1em;
+    transition: 0.5s;
 }
 
-
+#recherche_ville:hover{
+    transform: scale(1.1);
+}
 
 
 /*Filtres*/
@@ -964,8 +969,12 @@
         border: solid #0065fc 1px;
         border-radius: 10px;
         padding: 1em 1.2em;
+        transition: 0.5s;
     }
 
+    .boutton_rechercher:hover{
+        transform: scale(1.1);
+    }
 
             /*Section 2*/
 
