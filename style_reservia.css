@@ -625,7 +625,7 @@
     flex-direction: column;
     width: 31%;
     list-style-type: none;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .li_footer{
@@ -633,7 +633,7 @@
 }
 
 .ahref_footer{
-    text-decoration:none;
+    text-decoration: none;
     color: black;
 }
 
