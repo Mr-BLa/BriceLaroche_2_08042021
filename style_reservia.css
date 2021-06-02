@@ -123,19 +123,19 @@
 
 .ul_li_ancre{
     border-top: solid 2px transparent;
-    padding: 43px 25px 30px 25px;
+    padding: 58px 25px 30px 25px;
 }
 
 .ul_li_ancre:hover{
     border-top: solid 2px #0065fc;
-    padding: 43px 25px 30px 25px;
+    padding: 58px 25px 30px 25px;
 }
 
 
 .ul_li_a{
     text-decoration: none;
     color:black;
-    padding: 45px 25px 30px 25px;
+    padding: 58px 25px 30px 25px;
 }
 
 .nav_a_hover:hover{
@@ -145,13 +145,12 @@
 .sinscrire{
     display: block;
     margin-left: 25px;
-    padding: 45px 0 0 0;
+    padding: 58px 0 0 0;
     transition: 0.5s;
 }
 
 .sinscrire:hover{
-    border-top: none;
-    padding: 47px 0 0 0;
+    padding: 58px 0 0 0;
     transform: scale(1.1);
 }
 
@@ -601,8 +600,13 @@
 
 /*Footer*/
 
+.footer{
+    background-color: #f2f2f2;
+    padding: 50px;
+}
+
 .wrapper_footer{
-    width: 100%;
+    max-width: 1440px;
     margin-bottom: 30px;
     margin: auto;
 }
@@ -610,9 +614,6 @@
 .div_footer{
     display: flex;
     justify-content: space-between;
-    margin: auto;
-    background-color: #f2f2f2;
-    padding: 50px;
 }
 
 .h3_footer{
@@ -626,6 +627,7 @@
     width: 31%;
     list-style-type: none;
     text-decoration: none;
+    padding: 0 40px 0 0;
 }
 
 .li_footer{
@@ -771,6 +773,11 @@
     .activites_figure{
         width: 300px;
     }
+
+            /*Footer*/
+    .footer{
+        padding: 50px 3.5vw 50px 3.5vw;
+    }
 }
 
 
@@ -834,7 +841,6 @@
     .div_footer{
         flex-direction: column;
         justify-content: center;
-        padding: 50px 3.5vw 50px 3.5vw;
     }
 
     .ul_footer{
@@ -1109,17 +1115,20 @@
 
             /*Footer*/
 
+        .footer{
+            padding: 50px 5vw 10px 5vw;
+        }
+
         .div_footer{
             margin-top: 25px;
-            padding: 50px 5vw 10px 5vw;
         }
 }
 
 
 
 
-/*681 -> 6000 */
-@media screen and (min-width: 681px) and (max-width: 6000px){
+/*681*/
+@media screen and (min-width: 681px){
 
         .span_boutton {
             display: none;
