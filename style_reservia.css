@@ -98,7 +98,7 @@
 }
 
 #icone_reservia{
-    margin: 43px 1.75vw 2vw 0;
+    margin: 43px 28px 29px 0;
 }
 
 
@@ -402,8 +402,8 @@
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    max-width: 65%;
-    padding: 0 5px 0 5px;
+    max-width: 63%;
+    padding: 0 20px;
 }
 
 .titre_article{
@@ -423,7 +423,7 @@
     background-size: cover;
     padding: 5px 5px 15px 5px;
     border-radius: 25px;
-    width: 250px;
+    width: 240px;
     height: 180px;
     margin: 3.5px 0 18px 0;
     box-shadow: 2px 2px 15px #d9d9d9;
@@ -591,7 +591,7 @@
 /*Info activités*/
 .figcaption_activites{
     height: 43px;
-    padding: 0.75em 0 0.5em 1em;
+    padding: 0.75em 1em 0.5em 1em;
     font-weight: bold;
 }
 
@@ -923,18 +923,18 @@
         top: 0;
         right: 6vw;
         margin-bottom: 10px;
-        padding: 58px 0 0 0;
+        padding: 60px 0 0 0;
         width: 70px;
         border-bottom: none;
     }
 
     .sinscrire:hover{
-        padding: 58px 0 0 0;
+        padding: 60px 0 0 0;
         border-bottom: none;
     }
 
     #icone_reservia{
-        margin: 43px 1.75vw 2vw 5vw;
+        margin: 43px 28px 29px 5vw;
     }
 
 
@@ -952,7 +952,7 @@
         /*Choix Ville*/
 
     #selection_ville{
-        width: 70%;
+        max-width: 250px;
     }
 
     .submit_rechercher{
@@ -968,7 +968,7 @@
 
     .span_boutton{
         position: absolute;
-        left: 70vw;
+        left: 230px;
     }
 
     .boutton_rechercher{
