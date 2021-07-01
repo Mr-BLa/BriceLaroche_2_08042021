@@ -1,0 +1,1117 @@
+/* Fonts */
+@font-face {
+    font-family: 'Raleway';
+    src: local('fonts/Raleway Regular'), local('fonts/Raleway-Regular'),
+        url('fonts/Raleway-Regular.woff2') format('woff2'),
+        url('fonts/Raleway-Regular.woff') format('woff'),
+        url('fonts/Raleway-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*
+{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+
+
+/*Modif ponctuelles font - span*/
+
+.bold{
+    font-weight: bold;
+}
+
+
+
+/*Icones*/
+
+.fa-map-marker-alt{
+    background-color: #f2f2f2;
+    display: flex;
+    font-size: 1.2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconbleu{
+    font-size: 1.2em;
+    color: #0065fc;
+    background-color: #deebff;
+    border-radius: 50%;
+}
+
+.etoile{
+    width: 1em;
+    height: 1em; 
+}
+
+.etoile_bleue{
+    fill: #0065fc;
+    color: #0065fc;
+}
+
+.etoile_grise{
+    fill: #d9d9d9;
+    color: #d9d9d9;
+}
+
+.fa-chart-line{
+    font-size: 1.9em;
+}
+
+.icon_i{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: #0065fc;
+    font-size: 0.8em;
+    border: solid #d9d9d9 1px;
+    border-radius: 50%;
+    width: 0.8em;
+    height: 0.8em;
+    padding: 0.5em 0.4em 0.6em 0.8em;
+    margin-right: 0.9em;
+}
+
+
+
+
+
+/*BODY*/
+
+
+.wrapper_body{
+    margin: auto;
+    max-width: 1440px;
+    padding: 0 50px 0 50px;
+}
+
+
+/*HEADER*/
+
+#menu{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+#icone_reservia{
+    margin: 43px 1.75vw 2vw 0;
+}
+
+
+
+
+/*NAV*/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_div{
+    display: flex;
+}
+
+.header_ul{
+    display: flex;
+    list-style-type: none;
+}
+
+
+.ul_li_ancre{
+    border-top: solid 2px transparent;
+    padding: 43px 25px 30px 25px;
+}
+
+.ul_li_ancre:hover{
+    border-top: solid 2px #0065fc;
+    padding: 43px 25px 30px 25px;
+}
+
+
+.ul_li_a{
+    text-decoration: none;
+    color:black;
+    padding: 45px 25px 30px 25px;
+}
+
+.nav_a_hover:hover{
+    color: #0065fc;
+}
+
+.sinscrire{
+    display: block;
+    margin-left: 25px;
+    padding: 45px 0 0 0;
+}
+
+.sinscrire:hover{
+    border-top: none;
+    padding: 47px 0 0 0;
+}
+
+.inscription{
+    color: #0065fc;
+    text-decoration: none;
+}
+
+
+
+
+
+/*BLOC PAGE*/
+
+.h1_titre{
+    font-weight: bold;
+    padding-bottom: 0.5em;
+    font-size: 1.5em;
+}
+
+.h1_sous-titre{
+    font-size: 1em;
+}
+
+#bloc_h1{
+    margin-bottom: 1em;
+}
+
+
+/*Choix ville*/
+
+
+#ville{
+    display: flex; 
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.span_icon_map-marker{
+    background-color: #f2f2f2;
+    padding: 12px 16px 12px 16px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#selection_ville{
+    border-top: solid #f2f2f2 1px;
+    border-bottom: solid #f2f2f2 1px;
+    border-right: none;
+    border-left: none;
+    padding: 1em;
+    padding-left: 1.5em;
+}
+
+#selection_ville::placeholder{
+    font-weight: bold;
+    color: black;
+}
+
+#recherche_ville{
+    color: #ffffff;
+    background-color:#0065fc;
+    border: solid #0065fc 1px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 1em;
+}
+
+
+
+
+/*Filtres*/
+
+
+.filtres{
+    display: flex; 
+    align-items: start;
+    margin-bottom: 10px;
+    line-height: 52px;
+}
+
+.h4_filtres{
+    margin-right: 2em;
+    font-weight: bold;
+}
+
+
+.liens_filtres{
+    display: inline-flex;
+    flex-direction: row-reverse;
+    list-style-type: none;
+    text-decoration:none;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    max-height: 1em;
+    border-top: solid #d9d9d9 2px;
+    border-right: solid #d9d9d9 2px;
+    border-bottom: solid #d9d9d9 2px;
+    border-left: none;
+    border-radius: 60px;
+    margin-right: 2em;
+    margin-bottom: 15px;
+    padding: 1em 1.5em 1em 0;
+    transition: 0.5s;
+}
+
+.liens_filtres:hover{
+    transform: scale(1.1);
+
+}
+
+.span_icon_filtres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: none;
+    margin-right: 1em;
+    background-color: #deebff;
+    border-radius: 50%;
+    height: 52px; 
+    width: 52px; 
+}
+
+
+
+/*Info*/
+
+
+.information{
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SECTION 2 - HEBERGEMENT */
+
+.section_hebergement{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0 0 50px 0;
+}
+
+
+/*Modifs fonts*/
+.tarifs{
+    font-size: 0.9em;
+    display: block;
+    padding-top: 0.5em;
+}
+
+
+
+/*ASIDE*/
+
+
+.pop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f2f2f2 ;
+    border-radius: 25px;
+    min-width: 32%;
+}
+
+
+.div_pop_h2{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin: 30px 0 20px 0;
+}
+
+.titre_pop{
+    display: block;
+    font-weight: bold;
+}
+
+.div_aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside_cards{
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 25px;
+    width: 325px;
+    height: 140px;
+    padding: 5px 33px 5px 5px;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 15px #d9d9d9;
+    transition: 0.5s;
+}
+
+.aside_cards:hover{
+    transform: scale(1.1);
+}
+
+.aside_a{
+    display: flex;
+    text-decoration:none;
+    color: black;
+}
+
+.img_aside{
+    width: 41%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+.div_info_cards_aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px 10px 0;
+}
+
+.info_cards_aside{
+    display: block;
+    padding: 0.75em 0 1em 1em;
+}
+
+
+
+/*Article*/
+.hebergement{
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    max-width: 65%;
+    padding: 0 5px 0 5px;
+}
+
+.titre_article{
+    margin: 30px 0 20px 30px;
+    font-weight: bold;
+}
+
+.div_article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.article_cards{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    background-size: cover;
+    padding: 5px 5px 15px 5px;
+    border-radius: 25px;
+    width: 250px;
+    height: 180px;
+    margin: 3.5px 0 18px 0;
+    box-shadow: 2px 2px 15px #d9d9d9;
+    transition: 0.5s;
+}
+
+.article_cards:hover{
+    transform: scale(1.1);
+}
+
+.article_a{
+    text-decoration:none;
+    color: black;
+}
+
+.img_article{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.div_info_cards_article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info_cards_article{
+    display: block;
+    padding: 5px 0 0 15px;
+}
+
+.article_tarifs{
+    display: block;
+    padding: 5px 0 0 0;
+    font-size: 0.9em;
+}
+
+.etoiles_art{
+    padding: 5px 0 0 15px;
+}
+
+.afficher_plus{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.div_afficher_plus{
+    margin: 15px 0 30px 30px;
+}
+
+
+
+
+
+/*Activités*/
+.section_activités{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 30px auto 65px auto;
+}
+
+.titre_activites{
+    padding: 15px 0 30px 0;
+    font-weight: bold;
+}
+
+.div_activites{
+    display: flex;
+}
+
+.groupe_3act{
+    display: flex;
+}
+
+.groupe_3act_gauche{
+    width: 48.4%;
+}
+
+.groupe_3act_droit{
+    width: 51.6%;
+}
+
+.groupe_2activites{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0 0 46px;
+}
+
+.activite_gd_format{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 10px #f2f2f2;
+    border-radius: 20px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.activite_gd_format:hover{
+    transform: scale(1.1);
+}
+
+.div_2e_gd_format{
+    margin: 0 0 0 47px;
+}
+
+.activites_petit_format{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 15px #f2f2f2;
+    border-radius: 20px;
+    padding-bottom: 50px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.activites_petit_format:hover{
+    transform: scale(1.1);
+}
+
+
+/*figure href activités*/
+
+.activites_figure{
+    text-decoration:none;
+    color: black;
+}
+
+.act_vieuxport_calanques{
+    height: 480px;
+}
+.img_vieuxport_calanques{
+    height: 428px;
+}
+.act_pomegues{
+    height: 199px;
+}
+.act_frioul{
+    height: 125px;
+}
+.act_nddlg{
+    height: 155px;
+}
+.act_longchamp{
+    height: 169px;
+}
+
+
+
+/*Images Activités*/
+
+.img_activites{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
+
+/*Info activités*/
+.figcaption_activites{
+    height: 43px;
+    padding: 0.75em 0 0.5em 1em;
+    font-weight: bold;
+}
+
+
+
+
+/*Footer*/
+
+.wrapper_footer{
+    width: 100%;
+    margin-bottom: 30px;
+    margin: auto;
+}
+
+.div_footer{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    background-color: #f2f2f2;
+    padding: 50px;
+}
+
+.h3_footer{
+    padding: 0 0 20px 0;
+    font-weight: bold;
+}
+
+.ul_footer{
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    list-style-type: none;
+    text-decoration:none;
+}
+
+.li_footer{
+    padding-bottom: 10px;
+}
+
+.ahref_footer{
+    text-decoration:none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+
+/*1280*/
+@media screen and (max-width: 1280px){
+
+    .wrapper_body{
+        padding: 0 3.5vw 0 3.5vw;
+    }
+
+    .filtres{
+        display: block;
+    }
+
+
+            /*hébergement*/
+    .section_hebergement{
+        flex-direction: column;
+        align-content: space-between;
+    }
+
+    .hebergement{
+        max-width: 88%;
+    }
+
+    .div_article{
+        justify-content: space-around;
+    }
+
+    .article_cards{
+        width: 30%;
+    }
+
+            /*Aside*/
+    .pop{
+        margin: 0 3vw;
+        margin-bottom: 50px;
+        padding: 0 50px 0 50px;
+    }
+
+    .div_aside{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .div_pop_h2{
+        padding: 0 0 30px 0;
+        margin: 30px 0 0 0;
+        width: 76vw;
+    }
+
+    .aside_cards{
+        margin-bottom: 50px;
+        width: 28%;
+    }
+
+    .div_info_cards_aside{
+        padding: 0 0 10px 0;
+    }
+
+    .info_cards_aside{
+        padding: 0 0 0 1em;
+    }
+
+    .titre_cards_aside{
+        font-size: 0.9em;
+    }
+
+    .tarifs{
+        font-size: 0.8em;
+    }
+
+            /*Article*/
+    .hebergement{
+        margin: auto;
+        justify-content: center;
+        padding: 0 30px 50px 30px;
+    }
+
+    .titre_article{
+        padding: 15px 0 20px 0;
+        margin: 30px 0 0 0;
+    }
+
+    .article_cards{
+        margin: 3.5px 0 50px 0;
+    }
+
+    .div_afficher_plus{
+        margin: 15px 0 0 0;
+    }
+
+            /*activités*/
+    
+    .section_activités{
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .div_activites{
+        flex-direction: column;
+        margin: auto;
+        align-content: space-between;
+    }
+
+    .groupe_3act{
+        margin-bottom: 50px;
+    }
+
+    .div_2e_gd_format{
+        margin: 0;
+    }
+
+    .titre_activites{
+        display: block;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .activites_figure{
+        width: 300px;
+    }
+}
+
+
+
+
+/*980*/
+@media screen and (max-width: 980px){
+
+            /*wrapper body*/
+    .wrapper_body{
+        padding: 0 3.5vw 0 3.5vw;
+    }
+
+            /*Aside*/
+    .pop{
+        margin: 0 0 50px 0;
+    }
+
+    .div_aside{
+        flex-direction: column;
+    }
+
+    .aside_cards{
+        width: 93%;
+    }
+
+    .div_info_cards_aside{
+        padding: 0 20px 10px 0;
+    }
+
+    .titre_cards_aside{
+        font-size: 1em;
+    }
+
+    .tarifs{
+        font-size: 0.9em;
+    }
+
+            /*Article*/
+    .hebergement{
+        margin: 0;
+        justify-content: center;
+        padding: 0 2vw 50px 2vw;
+        max-width: 100%;
+    }
+
+    .article_cards{
+        width: 45%;
+    }
+
+            /*activités*/
+    
+    .section_activités{
+        
+        margin: 50px auto 50px auto;
+    }
+
+
+            /*Footer*/
+
+    .div_footer{
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 3.5vw 50px 3.5vw;
+    }
+
+    .ul_footer{
+        
+        width: 75%;
+        margin-bottom: 35px;
+        padding-left: 0;
+    }
+}
+
+
+
+
+/*680*/
+@media screen and (max-width: 680px){
+
+            /*Wrapper*/
+
+    .wrapper_body{
+        padding: 0;
+    }
+
+            /*Header*/
+
+    .header{
+        position: relative;
+        display: block;
+    }
+
+    .header_div{
+        display: block;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .header_nav{
+        width: 100%;
+    }
+
+    .header_ul{
+        display: inline-flex;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .header_ul_li{
+        width: 50%;
+        display: inline-block;
+    }
+
+    .ul_li_ancre{
+        border-top: none;
+        border-bottom: solid 2px #f2f2f2;
+        padding: 43px 0 15px 0;
+        box-sizing: border-box;
+    }
+
+    .ul_li_ancre:hover{
+        border-top: none;
+        border-bottom: solid 2px #0065fc;
+        padding: 43px 0 15px 0;
+        font-weight: bold;
+        box-sizing: border-box;
+    }
+
+    .ul_li_a{
+        padding: 43px 0 30px 0;
+    }
+
+    .li_hebergements{
+        text-align: center;
+    }
+
+    .li_activites{
+        text-align: center;
+    }
+
+    .sinscrire{
+        position: absolute;
+        top: 0;
+        right: 6vw;
+        margin-bottom: 10px;
+        padding: 58px 0 0 0;
+        width: 70px;
+        border-bottom: none;
+    }
+
+    .sinscrire:hover{
+        padding: 58px 0 0 0;
+        border-bottom: none;
+    }
+
+    #icone_reservia{
+        margin: 43px 1.75vw 2vw 5vw;
+    }
+
+
+
+            /*Section 1*/
+
+    .section_h1{
+        margin: 0 3.5vw 0 3.5vw;
+    }
+
+    #bloc_h1{
+        margin: 30px 0 25px 0;
+    }
+
+        /*Choix Ville*/
+
+    #selection_ville{
+        width: 70%;
+    }
+
+    .submit_rechercher{
+        display: none;
+    }
+
+    #recherche_ville{
+        border-radius: 10px;
+        width: 45px;
+        position: absolute;
+        left: 70vw;
+    }
+
+    .span_boutton{
+        position: absolute;
+        left: 70vw;
+    }
+
+    .boutton_rechercher{
+        color: #ffffff;
+        background-color: #0065fc;
+        border: solid #0065fc 1px;
+        border-radius: 10px;
+        padding: 1em 1.2em;
+    }
+
+
+            /*Section 2*/
+
+        /*Aside*/
+
+        .pop{
+            margin: 0;
+            padding: 0 0 25px 0;
+            border-radius: 0;
+        }
+
+        .div_pop_h2{
+            margin: 30px 0 0 0;
+            width: 89%;
+        }
+
+        .aside_cards{
+            margin: 0 0 15px 0;
+            padding: 5px;
+            width: 90%;
+        }
+
+        .aside_cards:hover{
+            transform: scale(1.06)
+        }
+
+        .info_cards_aside{
+            padding: 0.75em 0 1em 1em;
+        }
+
+        /*Article*/
+
+        .hebergement{
+            padding: 0;
+            background-color: transparent;
+        }
+
+        .titre_article{
+            margin: 30px auto 0 5vw; 
+        }
+
+        .div_article{
+            justify-content: space-evenly;
+        }
+
+        .article_cards{
+            width: 87.5%;
+            margin: 3.5px 0 10px 0;
+        }
+
+        .div_afficher_plus{
+            margin: 25px 0 0 5vw;
+        }
+
+        .afficher_plus{
+            font-size: 1.2em;
+        }
+
+
+            /*Activités*/
+
+        .section_activités{
+            margin: 0 auto 0 auto;
+        }
+
+        .titre_activites{
+            margin: 0 0 0 5vw;
+        }
+
+        .div_activites{
+            margin: 0 0 0 5vw;
+        }
+
+        .groupe_3act{
+            display: block;
+            margin-bottom: 0;
+        }
+
+        .groupe_3act_gauche{
+            width: 100%;
+        }
+
+        .groupe_3act_droit{
+            width: 100%;
+        }
+
+        .groupe_2activites{
+            margin: 0;
+            width: 95%;
+        }
+
+        .activites_figure{
+            width: 100%;
+        }
+
+        .activite_gd_format{
+            width: 95%;
+            margin-bottom: 25px;
+        }
+
+        .activites_petit_format{
+            margin-bottom: 25px;
+        }
+
+        .act_vieuxport_calanques{
+            height: 200px;
+        }
+
+        .img_vieuxport_calanques{
+            height: 150px;
+        }
+
+        .act_longchamp{
+            height: 150px;
+        }
+        
+        .act_frioul{
+            height: 150px;
+        }
+
+        .act_nddlg{
+            height: 150px;
+        }
+
+        .act_pomegues{
+            height: 150px;
+        }
+
+
+
+            /*Footer*/
+
+        .div_footer{
+            margin-top: 25px;
+            padding: 50px 5vw 10px 5vw;
+        }
+}
+
+
+
+
+/*681 -> 6000 */
+@media screen and (min-width: 681px) and (max-width: 6000px){
+
+        .span_boutton {
+            display: none;
+        }
+}
+
